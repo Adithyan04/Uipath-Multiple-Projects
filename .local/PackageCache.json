@@ -2,6 +2,37 @@
   "Packages": [
     {
       "Package": {
+        "Id": "Custom.Activities.VariableComparer",
+        "Version": "2.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\uipathuser\\.nuget\\packages\\custom.activities.variablecomparer/2.1.6\\lib/net451/CustomActivities.VariableComparer.Design.dll",
+        "C:\\Users\\uipathuser\\.nuget\\packages\\custom.activities.variablecomparer/2.1.6\\lib/net451/CustomActivities.VariableComparer.dll",
+        "C:\\Users\\uipathuser\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities.Extensions",
+        "Version": "2.0.6.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\uipathuser\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
+        "C:\\Users\\uipathuser\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "TestingFrameworkUi",
+        "Version": "1.3.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\uipathuser\\.nuget\\packages\\propertychanged.fody/2.6.0\\lib/net452/PropertyChanged.dll",
+        "C:\\Users\\uipathuser\\.nuget\\packages\\testingframeworkui/1.3.3\\lib/net461/Activities.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.6.2"
       },
@@ -10,31 +41,14 @@
         "C:\\Users\\uipathuser\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\uipathuser\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.Design.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Mail.Activities",
-        "Version": "1.5.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\uipathuser\\.nuget\\packages\\bouncycastle/1.8.1\\lib/BouncyCastle.Crypto.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/MailKit.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/MimeKit.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.Activities.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.dll"
       ]
     },
     {
@@ -68,10 +82,10 @@
       },
       "Assemblies": [
         "C:\\Users\\uipathuser\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\uipathuser\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
@@ -97,11 +111,11 @@
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRECommon.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Core.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.GoogleCloud.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Microsoft.dll",
         "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\uipathuser\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.dll"
       ]
     }
   ],
@@ -110,11 +124,6 @@
     "AvalonEdit": {
       "Id": "AvalonEdit",
       "Version": "5.0.3",
-      "Dependencies": []
-    },
-    "BouncyCastle": {
-      "Id": "BouncyCastle",
-      "Version": "1.8.1",
       "Dependencies": []
     },
     "ClosedXML": {
@@ -132,6 +141,16 @@
       "Version": "2.13.5",
       "Dependencies": []
     },
+    "Custom.Activities.VariableComparer": {
+      "Id": "Custom.Activities.VariableComparer",
+      "Version": "2.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
+    },
     "DocumentFormat.OpenXml": {
       "Id": "DocumentFormat.OpenXml",
       "Version": "2.5.0",
@@ -142,14 +161,19 @@
       "Version": "2.8.0",
       "Dependencies": []
     },
+    "Fody": {
+      "Id": "Fody",
+      "Version": "3.3.2",
+      "Dependencies": []
+    },
     "Humanizer.Core": {
       "Id": "Humanizer.Core",
       "Version": "2.4.2",
       "Dependencies": []
     },
-    "interop.domino.dll": {
-      "Id": "interop.domino.dll",
-      "Version": "1.0.0",
+    "Microsoft.Activities.Extensions": {
+      "Id": "Microsoft.Activities.Extensions",
+      "Version": "2.0.6.9",
       "Dependencies": []
     },
     "Microsoft.AspNet.SignalR.Client": {
@@ -161,11 +185,6 @@
           "Item2": "[6.0.4, )"
         }
       ]
-    },
-    "Microsoft.Exchange.WebServices": {
-      "Id": "Microsoft.Exchange.WebServices",
-      "Version": "2.2.0",
-      "Dependencies": []
     },
     "Microsoft.Rest.ClientRuntime": {
       "Id": "Microsoft.Rest.ClientRuntime",
@@ -197,10 +216,30 @@
         }
       ]
     },
+    "PropertyChanged.Fody": {
+      "Id": "PropertyChanged.Fody",
+      "Version": "2.6.0",
+      "Dependencies": [
+        {
+          "Item1": "Fody",
+          "Item2": "[3.3.2, )"
+        }
+      ]
+    },
     "SharpZipLib": {
       "Id": "SharpZipLib",
       "Version": "1.0.0",
       "Dependencies": []
+    },
+    "TestingFrameworkUi": {
+      "Id": "TestingFrameworkUi",
+      "Version": "1.3.3",
+      "Dependencies": [
+        {
+          "Item1": "PropertyChanged.Fody",
+          "Item2": "[2.6.0, )"
+        }
+      ]
     },
     "UiPath": {
       "Id": "UiPath",
@@ -233,24 +272,6 @@
         },
         {
           "Item1": "SharpZipLib",
-          "Item2": "[1.0.0, )"
-        }
-      ]
-    },
-    "UiPath.Mail.Activities": {
-      "Id": "UiPath.Mail.Activities",
-      "Version": "1.5.1",
-      "Dependencies": [
-        {
-          "Item1": "Microsoft.Exchange.WebServices",
-          "Item2": "[2.2.0, )"
-        },
-        {
-          "Item1": "BouncyCastle",
-          "Item2": "[1.8.1, )"
-        },
-        {
-          "Item1": "interop.domino.dll",
           "Item2": "[1.0.0, )"
         }
       ]

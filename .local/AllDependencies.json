@@ -11,15 +11,6 @@
           "lib/Net40/ICSharpCode.AvalonEdit.dll": {}
         }
       },
-      "BouncyCastle/1.8.1": {
-        "type": "package",
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/BouncyCastle.Crypto.dll": {}
-        }
-      },
       "ClosedXML/0.87.1": {
         "type": "package",
         "dependencies": {
@@ -39,6 +30,19 @@
         },
         "runtime": {
           "lib/net40-client/CsvHelper.dll": {}
+        }
+      },
+      "Custom.Activities.VariableComparer/2.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/net451/_._": {}
+        },
+        "runtime": {
+          "lib/net451/CustomActivities.VariableComparer.Design.dll": {},
+          "lib/net451/CustomActivities.VariableComparer.dll": {}
         }
       },
       "DocumentFormat.OpenXml/2.5.0": {
@@ -103,6 +107,12 @@
           }
         }
       },
+      "Fody/3.3.2": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Humanizer.Core/2.4.2": {
         "type": "package",
         "compile": {
@@ -112,13 +122,17 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "interop.domino.dll/1.0.0": {
+      "Microsoft.Activities.Extensions/2.0.6.9": {
         "type": "package",
+        "frameworkAssemblies": [
+          "System.Activities"
+        ],
         "compile": {
-          "lib/_._": {}
+          "lib/Net45/_._": {}
         },
         "runtime": {
-          "lib/Interop.Domino.dll": {}
+          "lib/Net45/Microsoft.Activities.Extensions.Design.dll": {},
+          "lib/Net45/Microsoft.Activities.Extensions.dll": {}
         }
       },
       "Microsoft.AspNet.SignalR.Client/2.4.0": {
@@ -135,16 +149,6 @@
         },
         "runtime": {
           "lib/net45/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.Exchange.WebServices/2.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/40/_._": {}
-        },
-        "runtime": {
-          "lib/40/Microsoft.Exchange.WebServices.Auth.dll": {},
-          "lib/40/Microsoft.Exchange.WebServices.dll": {}
         }
       },
       "Microsoft.Rest.ClientRuntime/2.3.20": {
@@ -199,6 +203,21 @@
           "lib/net45/NPOI.dll": {}
         }
       },
+      "PropertyChanged.Fody/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "3.3.2"
+        },
+        "compile": {
+          "lib/net452/_._": {}
+        },
+        "runtime": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
       "SharpZipLib/1.0.0": {
         "type": "package",
         "compile": {
@@ -206,6 +225,19 @@
         },
         "runtime": {
           "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "TestingFrameworkUi/1.3.3": {
+        "type": "package",
+        "dependencies": {
+          "PropertyChanged.Fody": "2.6.0"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/Activities.dll": {},
+          "lib/net461/WPFUI.exe": {}
         }
       },
       "UiPath/19.7.7128.27029": {
@@ -273,62 +305,6 @@
             "locale": "zh-CN"
           },
           "lib/net461/zh-CN/UiPath.Excel.resources.dll": {
-            "locale": "zh-CN"
-          }
-        }
-      },
-      "UiPath.Mail.Activities/1.5.1": {
-        "type": "package",
-        "dependencies": {
-          "BouncyCastle": "1.8.1",
-          "Microsoft.Exchange.WebServices": "2.2.0",
-          "interop.domino.dll": "1.0.0"
-        },
-        "compile": {
-          "lib/net452/_._": {}
-        },
-        "runtime": {
-          "lib/net452/MailKit.dll": {},
-          "lib/net452/MimeKit.dll": {},
-          "lib/net452/UiPath.Mail.Activities.Design.dll": {},
-          "lib/net452/UiPath.Mail.Activities.dll": {},
-          "lib/net452/UiPath.Mail.dll": {}
-        },
-        "resource": {
-          "lib/net452/fr/UiPath.Mail.Activities.Design.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.Mail.Activities.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.Mail.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/ja/UiPath.Mail.Activities.Design.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.Mail.Activities.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.Mail.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ru/UiPath.Mail.Activities.Design.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/ru/UiPath.Mail.Activities.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/ru/UiPath.Mail.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/zh-CN/UiPath.Mail.Activities.Design.resources.dll": {
-            "locale": "zh-CN"
-          },
-          "lib/net452/zh-CN/UiPath.Mail.Activities.resources.dll": {
-            "locale": "zh-CN"
-          },
-          "lib/net452/zh-CN/UiPath.Mail.resources.dll": {
             "locale": "zh-CN"
           }
         }
@@ -490,18 +466,6 @@
         "lib/Net40/ICSharpCode.AvalonEdit.xml"
       ]
     },
-    "BouncyCastle/1.8.1": {
-      "sha512": "nH+P67LavO5EcxjKdBxFfRdfdFhivS3Xp3+0br1KcpCI8DM6ksCWy6YYZjk7XFV+VsHGtkUovwIZ/vmCp42geA==",
-      "type": "package",
-      "path": "bouncycastle/1.8.1",
-      "files": [
-        ".nupkg.metadata",
-        "Readme.txt",
-        "bouncycastle.1.8.1.nupkg.sha512",
-        "bouncycastle.nuspec",
-        "lib/BouncyCastle.Crypto.dll"
-      ]
-    },
     "ClosedXML/0.87.1": {
       "sha512": "2LC0T8bu2G2kt34C4Ig87uZfrRO4MwMVI54e2To7m3DvwAs2Z2Ir86WQuUoW8Txo1uNGSfmu3DpfpQhSX0bIww==",
       "type": "package",
@@ -538,6 +502,18 @@
         "lib/portable-net40+sl5+win8+wpa+wp8/CsvHelper.dll",
         "lib/portable-net40+sl5+win8+wpa+wp8/CsvHelper.pdb",
         "lib/portable-net40+sl5+win8+wpa+wp8/CsvHelper.xml"
+      ]
+    },
+    "Custom.Activities.VariableComparer/2.1.6": {
+      "sha512": "fDYvEAPSYiNLiBLPy2RByqWa/9iu3HwBmyEZaTr/EZCm72+SUwbCBm+5ihgBb38oeSlwsFhXq176JdQ7Aa8Mqg==",
+      "type": "package",
+      "path": "custom.activities.variablecomparer/2.1.6",
+      "files": [
+        ".nupkg.metadata",
+        "custom.activities.variablecomparer.2.1.6.nupkg.sha512",
+        "custom.activities.variablecomparer.nuspec",
+        "lib/net451/CustomActivities.VariableComparer.Design.dll",
+        "lib/net451/CustomActivities.VariableComparer.dll"
       ]
     },
     "DocumentFormat.OpenXml/2.5.0": {
@@ -582,6 +558,42 @@
         "tools/install.ps1"
       ]
     },
+    "Fody/3.3.2": {
+      "sha512": "cotwoyB9JtIbawV1z2w4S/qbcR87C94VrBK1xXxCE+/CxnfaPi6u8a7kDk3z1QbrwCeK8jefnxpqfHiEu0QxVg==",
+      "type": "package",
+      "path": "fody/3.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Fody.targets",
+        "fody.3.3.2.nupkg.sha512",
+        "fody.nuspec",
+        "netclassictask/Fody.dll",
+        "netclassictask/FodyCommon.dll",
+        "netclassictask/FodyHelpers.dll",
+        "netclassictask/FodyIsolated.dll",
+        "netclassictask/Mono.Cecil.Mdb.dll",
+        "netclassictask/Mono.Cecil.Mdb.pdb",
+        "netclassictask/Mono.Cecil.Pdb.dll",
+        "netclassictask/Mono.Cecil.Pdb.pdb",
+        "netclassictask/Mono.Cecil.Rocks.dll",
+        "netclassictask/Mono.Cecil.Rocks.pdb",
+        "netclassictask/Mono.Cecil.dll",
+        "netclassictask/Mono.Cecil.pdb",
+        "netstandardtask/Fody.dll",
+        "netstandardtask/FodyCommon.dll",
+        "netstandardtask/FodyHelpers.dll",
+        "netstandardtask/FodyIsolated.dll",
+        "netstandardtask/Mono.Cecil.Mdb.dll",
+        "netstandardtask/Mono.Cecil.Mdb.pdb",
+        "netstandardtask/Mono.Cecil.Pdb.dll",
+        "netstandardtask/Mono.Cecil.Pdb.pdb",
+        "netstandardtask/Mono.Cecil.Rocks.dll",
+        "netstandardtask/Mono.Cecil.Rocks.pdb",
+        "netstandardtask/Mono.Cecil.dll",
+        "netstandardtask/Mono.Cecil.pdb"
+      ]
+    },
     "Humanizer.Core/2.4.2": {
       "sha512": "1ZKy7LHVYuhmM398hpvyWCcc2Fcx+hqiGYASELDthjWhVrsA6IabYnHRfkQFF6nGG6x4fA1D0StDX/U2Pj+FdQ==",
       "type": "package",
@@ -597,15 +609,25 @@
         "lib/netstandard2.0/Humanizer.xml"
       ]
     },
-    "interop.domino.dll/1.0.0": {
-      "sha512": "gKTX8fwrysbgSWSrJUpMpdp/qmRwYT8JTnbpFzTN72WnX3M1vxkHzpxH3oGMSqpHf20n9AZ0TzDJkt2itp6hyQ==",
+    "Microsoft.Activities.Extensions/2.0.6.9": {
+      "sha512": "yGwK3gYUzzGIzgybBtXsCbcWIj+Dv+gadnaWkmG0WpBs22AV8ZS7deFhAb2pznDoGz0Pj4M7Tt9RwK9VrNzf4A==",
       "type": "package",
-      "path": "interop.domino.dll/1.0.0",
+      "path": "microsoft.activities.extensions/2.0.6.9",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
-        "interop.domino.dll.1.0.0.nupkg.sha512",
-        "interop.domino.dll.nuspec",
-        "lib/Interop.Domino.dll"
+        "help/Microsoft.Activities.Extensions Documentation.chm",
+        "lib/Net40/Microsoft.Activities.Extensions.Design.dll",
+        "lib/Net40/Microsoft.Activities.Extensions.dll",
+        "lib/Net401/Microsoft.Activities.Extensions.Design.dll",
+        "lib/Net401/Microsoft.Activities.Extensions.dll",
+        "lib/Net45/Microsoft.Activities.Extensions.Design.dll",
+        "lib/Net45/Microsoft.Activities.Extensions.dll",
+        "microsoft.activities.extensions.2.0.6.9.nupkg.sha512",
+        "microsoft.activities.extensions.nuspec",
+        "tools/Microsoft.Activities.Extensions.NuGet.dll",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "Microsoft.AspNet.SignalR.Client/2.4.0": {
@@ -629,25 +651,6 @@
         "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.xml",
         "microsoft.aspnet.signalr.client.2.4.0.nupkg.sha512",
         "microsoft.aspnet.signalr.client.nuspec"
-      ]
-    },
-    "Microsoft.Exchange.WebServices/2.2.0": {
-      "sha512": "NlkaTD0uWtg9VbiWq0VDWMBPzHFknH3tmstrxt0acrT09LBGqATTjRpsGOODz6tUdX7/dehBinxsf75U5Uw/+A==",
-      "type": "package",
-      "path": "microsoft.exchange.webservices/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        "doc/License Terms.rtf",
-        "doc/README.htm",
-        "doc/Redist.txt",
-        "lib/40/Microsoft.Exchange.WebServices.Auth.dll",
-        "lib/40/Microsoft.Exchange.WebServices.Auth.pdb",
-        "lib/40/Microsoft.Exchange.WebServices.Auth.xml",
-        "lib/40/Microsoft.Exchange.WebServices.dll",
-        "lib/40/Microsoft.Exchange.WebServices.pdb",
-        "lib/40/Microsoft.Exchange.WebServices.xml",
-        "microsoft.exchange.webservices.2.2.0.nupkg.sha512",
-        "microsoft.exchange.webservices.nuspec"
       ]
     },
     "Microsoft.Rest.ClientRuntime/2.3.20": {
@@ -747,6 +750,26 @@
         "npoi.nuspec"
       ]
     },
+    "PropertyChanged.Fody/2.6.0": {
+      "sha512": "N0pu2ZCoS4e2qrRK+ZZO7TymGJc9bp5L/qLlQRvbfvgN0rcjv61eT85T8dlltWNqQegULVmQnE0BvpXs9VHqkA==",
+      "type": "package",
+      "path": "propertychanged.fody/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/PropertyChanged.Fody.props",
+        "lib/net452/PropertyChanged.dll",
+        "lib/net452/PropertyChanged.xml",
+        "lib/netstandard1.0/PropertyChanged.dll",
+        "lib/netstandard1.0/PropertyChanged.xml",
+        "netclassicweaver/PropertyChanged.Fody.dll",
+        "netclassicweaver/PropertyChanged.Fody.xcf",
+        "netstandardweaver/PropertyChanged.Fody.dll",
+        "netstandardweaver/PropertyChanged.Fody.xcf",
+        "propertychanged.fody.2.6.0.nupkg.sha512",
+        "propertychanged.fody.nuspec"
+      ]
+    },
     "SharpZipLib/1.0.0": {
       "sha512": "YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
       "type": "package",
@@ -759,6 +782,18 @@
         "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
         "sharpziplib.1.0.0.nupkg.sha512",
         "sharpziplib.nuspec"
+      ]
+    },
+    "TestingFrameworkUi/1.3.3": {
+      "sha512": "oiBzp4RLi6e+1IXkK2RILkOenh+ChtzXo6jnm1Xiak3ZmUUNHIvTTjG0D4dQp6h5nicWhVK8gSDIEPM6HRC+vQ==",
+      "type": "package",
+      "path": "testingframeworkui/1.3.3",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net461/Activities.dll",
+        "lib/net461/WPFUI.exe",
+        "testingframeworkui.1.3.3.nupkg.sha512",
+        "testingframeworkui.nuspec"
       ]
     },
     "UiPath/19.7.7128.27029": {
@@ -840,36 +875,6 @@
         "lib/net461/zh-CN/UiPath.Excel.resources.dll",
         "uipath.excel.activities.2.6.2.nupkg.sha512",
         "uipath.excel.activities.nuspec"
-      ]
-    },
-    "UiPath.Mail.Activities/1.5.1": {
-      "sha512": "ZejvTmy0sUuLV5wNuYybsCIz2MUQ1keBTzPMHfcI7gaink07JdtMIirq+GSmBIxL3nfafPwSWYDwNSBb93hg4Q==",
-      "type": "package",
-      "path": "uipath.mail.activities/1.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/MailKit.dll",
-        "lib/net452/MailKit.xml",
-        "lib/net452/MimeKit.dll",
-        "lib/net452/MimeKit.xml",
-        "lib/net452/UiPath.Mail.Activities.Design.dll",
-        "lib/net452/UiPath.Mail.Activities.dll",
-        "lib/net452/UiPath.Mail.dll",
-        "lib/net452/fr/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/fr/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/fr/UiPath.Mail.resources.dll",
-        "lib/net452/ja/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/ja/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/ja/UiPath.Mail.resources.dll",
-        "lib/net452/ru/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/ru/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/ru/UiPath.Mail.resources.dll",
-        "lib/net452/zh-CN/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/zh-CN/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/zh-CN/UiPath.Mail.resources.dll",
-        "uipath.mail.activities.1.5.1.nupkg.sha512",
-        "uipath.mail.activities.nuspec"
       ]
     },
     "UiPath.OCR.Contracts/2.0.0": {
@@ -1064,8 +1069,10 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "Custom.Activities.VariableComparer >= 2.1.6 <= 2.1.6",
+      "Microsoft.Activities.Extensions >= 2.0.6.9 <= 2.0.6.9",
+      "TestingFrameworkUi >= 1.3.3 <= 1.3.3",
       "UiPath.Excel.Activities >= 2.6.2 <= 2.6.2",
-      "UiPath.Mail.Activities >= 1.5.1 <= 1.5.1",
       "UiPath.System.Activities >= 19.7.0 <= 19.7.0",
       "UiPath.UIAutomation.Activities >= 19.7.0 <= 19.7.0"
     ]
@@ -1084,15 +1091,25 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "Custom.Activities.VariableComparer": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[2.1.6, 2.1.6]"
+          },
+          "Microsoft.Activities.Extensions": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[2.0.6.9, 2.0.6.9]"
+          },
+          "TestingFrameworkUi": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.3.3, 1.3.3]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
             "version": "[2.6.2, 2.6.2]"
-          },
-          "UiPath.Mail.Activities": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.5.1, 1.5.1]"
           },
           "UiPath.System.Activities": {
             "include": "Runtime",
